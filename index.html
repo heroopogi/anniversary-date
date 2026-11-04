@@ -10,29 +10,18 @@
     body { margin: 0; color: #432e2c; background: #f5ebda; font: 1.05rem/1.6 Georgia, serif }
     main { max-width: 50rem; margin: 0 auto; padding: clamp(1rem,5vw,3rem) }
     article { border: 1px solid #a98f77; outline: 1px solid #bda58d; outline-offset: -7px; padding: clamp(1.5rem,7vw,4rem); text-align: center; background: #fff8ea }
-    header, footer { display: flex; align-items: center; justify-content: space-between; gap: .6rem; font: 600 .67rem/1.5 system-ui,sans-serif; letter-spacing: .15em; text-transform: uppercase }
-    header { border-bottom: 1px solid #c9b39e; padding-bottom: 1rem }
     svg { display: block; width: 9rem; height: 8rem; margin: 2rem auto .5rem; color: #943a47 }
     h1 { margin: .4rem 0 1rem; font-weight: normal; font-size: clamp(3rem,9vw,5.7rem); line-height: .96; letter-spacing: -.065em }
     h1 em { color: #913e4a }
-    p { max-width: 31ch; margin: 1.4rem auto }
     section { max-width: 24rem; margin: 2rem auto }
     h2 { color: #813846; font-size: 1.5rem; font-weight: normal; margin-bottom: .6rem }
     ol { list-style: none; padding: 0; margin: 0; text-align: left }
     li { display: grid; grid-template-columns: 5rem 1fr; align-items: baseline; gap: .6rem; padding: .55rem 0; border-bottom: 1px dotted #b99a80 }
     li time { color: #813846; font: 600 .85rem/1.5 system-ui,sans-serif; font-variant-numeric: tabular-nums }
-    details { margin: 1.8rem auto; max-width: 26rem }
-    summary { cursor: pointer; display: inline-block; border-radius: 3px; background: #813846; color: #fff8ea; padding: .7rem 1.5rem; font: 600 .9rem/1.5 system-ui,sans-serif }
-    summary::-webkit-details-marker { display:none }
-    summary:hover { background: #672b36 }
-    summary:focus-visible { outline: 3px solid #432e2c; outline-offset: 4px }
-    .letter { margin-top: 1.4rem; border-block: 1px dashed #b99a80; padding: .5rem; font-style: italic }
-    footer { border-top: 1px solid #c9b39e; padding-top: 1rem }
   </style>
 </head>
 <body>
   <main><article>
-    <header><span>Anniversary edition</span><span>Admit two</span></header>
     <svg viewBox="0 0 160 145" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true">
       <g transform="rotate(-9 80 80)">
         <path fill="#f3dfc7" d="M16 63 80 19l64 44v63H16z"/>
@@ -43,7 +32,6 @@
       </g>
     </svg>
     <h1>It’s a date,<br><em>Khai.</em></h1>
-    <p>There’s one person I want to spend our anniversary with. Lucky me, you’re reading this.</p>
     <section aria-labelledby="date">
       <h2 id="date"><time datetime="2026-11-05">November 5, 2026</time></h2>
       <ol aria-label="Our anniversary itinerary">
@@ -54,10 +42,6 @@
         <li><time datetime="13:30">1:30 PM</time><span>Home Sweet Home</span></li>
       </ol>
     </section>
-    <details><summary>A little note for you ♡</summary>
-      <div class="letter"><p>If I could keep one part of every date, it would be the moment I look across at you and forget what I was about to say.</p><p>Happy anniversary, love. Let’s make another memory together.</p></div>
-    </details>
-    <footer><span>For the two of us</span><span aria-hidden="true">♥</span><span>With love</span></footer>
   </article></main>
 </body>
 </html>
