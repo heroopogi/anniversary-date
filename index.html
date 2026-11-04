@@ -36,7 +36,6 @@
     ol { list-style: none; padding: 0; margin: 0; text-align: left }
     li { display: grid; grid-template-columns: 5rem 1fr; align-items: baseline; gap: .6rem; padding: .55rem 0; border-bottom: 1px dotted #b99a80 }
     li time { color: #813846; font: 600 .85rem/1.5 system-ui,sans-serif; font-variant-numeric: tabular-nums }
-    .music { width: 100%; max-width: 24rem }
   </style>
 </head>
 <body>
@@ -58,15 +57,14 @@
         <li><time datetime="13:30">1:30 PM</time><span>Home Sweet Home</span></li>
       </ol>
     </section>
-    <audio class="music" controls preload="metadata" src="here-with-me-instrumental.mp3" aria-label="Here With Me instrumental"></audio>
+    <audio hidden preload="metadata" src="here-with-me-instrumental.mp3"></audio>
   </article></main>
   <script>
     const envelope = document.querySelector('.envelope');
     const invitation = document.querySelector('#invitation');
     envelope.addEventListener('click', () => {
       invitation.hidden = false;
-      // The visible player also lets Khai start playback if her browser blocks it.
-      invitation.querySelector('.music').play().catch(() => {});
+      invitation.querySelector('audio').play().catch(() => {});
       envelope.setAttribute('aria-expanded', 'true');
       envelope.parentElement.classList.add('opening');
       invitation.querySelector('h1').focus({ preventScroll: true });
